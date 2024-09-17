@@ -1,0 +1,131 @@
+.customModal {
+  position: fixed; /* Para garantir que o modal cubra toda a tela */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalOverlay {
+  position: fixed; /* Para garantir que o overlay cubra toda a tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modalContent {
+  position: relative;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80%;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1002;
+}
+
+.carouselImageContainer {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-indicators .active {
+  background-color: #09eb09f3; /* Cor da bullet ativa */
+}
+
+/* Estilo para as setas de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+}
+
+/* Adiciona uma borda nas setas para destacá-las */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border: 1px solid #00ff0036; /* Borda para destacar */
+}
+
+/* Modifica a cor no hover das setas */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #464646; /* Cor das setas ao passar o mouse */
+}
+
+@media screen and (max-width: 768px) {
+  .customModal {
+  }
+
+  .modalContent {
+    max-width: 90%; /* Reduz a largura máxima para 90% da tela */
+    max-height: 90%; /* Faz o modal ocupar mais altura da tela */
+    padding: 10px; /* Ajusta o padding interno */
+  }
+
+  .carouselImageContainer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .carouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .closeButton {
+    top: 5px; /* Ajusta o botão de fechar para uma melhor posição */
+    right: 5px;
+    font-size: 14px; /* Diminui o tamanho do texto do botão */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px; /* Reduz o tamanho das setas de navegação */
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Faz as setas menos invasivas */
+  }
+
+  .carousel-indicators li {
+    width: 8px; /* Diminui o tamanho das bullets (indicadores) */
+    height: 8px;
+  }
+
+  .carousel-indicators .active {
+    background-color: #ff0000; /* Deixa a bullet ativa destacada */
+  }
+}

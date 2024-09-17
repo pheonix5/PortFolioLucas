@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  border-top: solid 5px #058a91;
+  width: 100%;
+  padding: 10px 16px;
+}
+
+footer p {
+  margin: 0 !important;
+}
+
+.footerText {
+  color: #fff;
+  font-size: 1rem;
+}
+.area-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconFooter {
+  font-size: 2rem;
+  display: flex;
+}
+
+.bodyline {
+  -moz-box-shadow: 0px 20px 20px #86ceeb;
+  -webkit-box-shadow: 0px 20px 20px #86ceeb;
+}
+
+@media screen and (max-width: 768px) {
+  .footerText {
+    font-size: 0.8rem;
+  }
+}
