@@ -2,6 +2,8 @@ import "./apresentacao.css";
 import fotoDePerfil from "../../assets/avatar.png";
 import { TypeAnimation } from "react-type-animation";
 import "animate.css";
+import CurriculoLucas from "../../assets/CurriculoLucas.pdf";
+import { Button } from "react-bootstrap";
 
 export function Apresentacao() {
   return (
@@ -27,6 +29,16 @@ export function Apresentacao() {
           repeat={Infinity}
           className="typingHome animate__animated animate__bounce"
         />
+
+        <Button
+          variant="outline-primary"
+          size="sm"
+          className="w-25 pulse"
+          type="button"
+          href={CurriculoLucas}
+        >
+          Download CV
+        </Button>
       </div>
 
       <div className="div-img">
