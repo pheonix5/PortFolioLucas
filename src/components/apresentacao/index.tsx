@@ -36,6 +36,7 @@ export function Apresentacao() {
           className="w-25 pulse"
           type="button"
           href={CurriculoLucas}
+          target="_blank"
         >
           Download CV
         </Button>
