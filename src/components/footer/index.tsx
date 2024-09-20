@@ -7,9 +7,25 @@ export function Footer() {
       <div className="footerText">
         <p>
           Email para contato:{" "}
-          <span className="textoDestaque">lucas.felix413@gmail.com</span>
+          <span className="textoDestaque">
+            <a
+              href="mailto:lucas.felix413@gmail.com"
+              style={{ textDecoration: "none" }}
+            >
+              lucas.felix413@gmail.com
+            </a>
+          </span>
           <br></br>
-          Feito por <span className="textoDestaque">Lucas Felix</span>
+          Feito por{" "}
+          <span className="textoDestaque">
+            <a
+              href="https://www.linkedin.com/in/lucas-felix-a986a7289/"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              Lucas Felix
+            </a>
+          </span>
         </p>
       </div>
 
